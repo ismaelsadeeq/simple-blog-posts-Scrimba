@@ -1,0 +1,252 @@
+
+
+body {
+    margin: 0;
+    font-family: 'ubuntu',sans-serif;
+    font-weight: 300;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    text-align: center; 
+    background-color:#f8f8f8;
+    padding:2em 0; 
+    margin-bottom: 2em;
+}
+.nav-list {
+    list-style: none ;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+}
+
+.nav-list-item {
+    /* margin: 0 1em; for linear nav */
+    margin-left:2em ;
+
+}
+.nav-link {
+    text-decoration: none;
+    color: #707070;
+    font-weight:700;
+}
+
+.nav-link:hover,
+.nav-link:focus{
+    color: #1792d2;
+} 
+
+.home {
+    /* border-bottom: 1px solid #707070 ; */
+    text-decoration: underline;
+}
+h1 {
+    font-family: 'Lora', 'serif';
+    font-weight: 400;
+    font-size :2rem; 
+    color: #143774;
+    margin:0;
+} 
+
+/* h1 subtitle */
+.subtitle {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .75rem;
+    margin: 0;
+    
+}
+
+/* Lets try some more complicated nav bar */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+.container-style {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+
+}
+
+
+/* Body typo */
+
+.article-title,
+h2,
+h3 {
+    font-family: 'Lora', 'serif';
+    font-weight: 400;
+    color: #1792d2;
+    font-size: 1.5rem;
+    margin-top: 0;
+
+}
+.article-read-more,
+.article-info {
+    font-size: .875rem;
+}
+.article-read-more {
+    color: #1792d2;
+    text-decoration: none;
+    font-weight: 700 ;
+}
+
+.article-read-more:hover,
+.article-read-more:focus  {
+    color: #143774;
+    text-decoration: underline ;
+    font-weight: 700 ;
+}
+.article-info {
+    margin:2em 0;
+}
+
+a {
+    color: #1792d2;
+    font-weight:500;
+}
+
+a:hover,
+a:focus {
+    color: #143774;
+}
+.life {
+    font-weight: 700;
+}
+
+
+.nav-list-item{
+    margin: .5em 0;
+}
+.home {
+    text-decoration: underline;
+}
+
+/* Article */
+
+.article-feature {
+    border-bottom: 1px solid #707070;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+.article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom:2em;
+}
+
+.article-recent-main {
+    order: 2;
+}
+.article-recent-sec{
+    order: 1;
+}
+.widget-recent-post-title{
+    font-size: 1rem;
+}
+.widget-title{
+    font-size: 1rem;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 700;
+    color: #143774;
+}
+.widget-recent-post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 1em;
+}
+.widget-recent-post:last-child {
+    border: 0;
+    margin-bottom: 0;
+
+}
+.widget-image {
+    order: -1;
+}
+
+/* footer */
+footer {
+    background: #143774;
+    text-align: center;
+    padding: 3em 0;
+    color: white;
+}
+
+
+
+
+
+@media (min-width:675px){
+    .container-style {
+        flex-direction: row;
+    }
+    .main {
+        width: 75%;
+    }
+    .side-bar {
+        width: 20%;
+    }
+    .nav-list {
+        flex-direction: row;
+    }
+    .nav-list-item{
+        margin: 0 1em; 
+    }
+    .article {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .article-recent-main {
+        /* margin-top: -2.5em; for cool layout*/
+        width: 68%;
+    }
+    .article-recent-sec {
+        width: 30%;
+    }
+    .article-info {
+        /* text-align: right;  for cool layout*/
+    }
+    .article-image {
+        /* width: 100%; */
+        /* min-height: 250px; */
+        /* object-fit: cover; */
+        /* object-position: center; */
+        /* margin-right: 1%; */
+    }
+    .article-feature{
+        display: flex;
+        flex-direction: column;
+    }
+    .article-image{
+        order: -2;
+    }
+    .article-info {
+        order: -1;
+    }
+    .main {
+        width: 70%;
+    }
+    .side-bar {
+        width: 25%;
+        min-width: 200px;
+    }
+   .side-bar-widget{
+       border: 20px solid #efefefef;
+       margin-bottom: 2em;
+       padding: 1.5em;
+       width: 100%;
+       /* margin-left: 3%; */
+   }
+    
+    
+   
+}
+
